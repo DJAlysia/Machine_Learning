@@ -21,3 +21,11 @@ import numpy as np
 obj=np.array([[1,2,3]])
 obj.reshape(3,1) + np.arange(3)
 obj
+
+# Numpy 문제
+import numpy as np
+arr = np.random.random((5, 5))
+arr[arr < 0.5] = 0
+arr *= 10
+arr = np.round(arr, 2)
+print(arr)
